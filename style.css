@@ -1,0 +1,215 @@
+*{
+    font-family: "Anta", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;  /* vertically-center */
+   
+
+}
+.logo{
+    width: 130px;
+    
+}
+.list-items{
+    display: inline-block;
+     list-style: none; /* remove list styles such as bullet points */
+    margin: 10px 20px;
+
+}
+.link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.link:hover{
+    color: red;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+   
+    
+}
+.title h1{
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+#lastName{
+    color: orange;
+}
+.download{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.imgGroup{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s ,left 2s;
+}
+.images:hover #girl{
+    left: 40%;
+}
+.images:hover #shape{
+    bottom: 50px;
+}
+#about{
+    margin: 16% 8% 0 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 37px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.about-image img{
+    width: 80%;
+}
+.about-details {
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: justify;
+}
+.information{
+    margin-top: 20px;
+}
+.info-box{
+    margin-bottom: 20px;
+}
+.info-box span{
+    margin-left: 15px;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+}
+.skill-image img{
+    width: 90%;
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    margin-bottom: 2rem;
+    align-items: center;
+    position: relative;
+}
+.bar span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.bar-box{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    /* left: 0px; */
+}
+.html{
+    width: 95%;
+    background-color: orange;
+}
+.css{
+    width: 88%;
+    background-color: orange;
+
+}
+.js{
+    width: 89%;
+    background-color: orange;
+}
+.react{
+    width: 85%;
+    background-color: orange;
+}
+.contact-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icons,.up-arrow{
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+.icons i{
+    font-size: 30px;
+    color: #000;
+}
+.icons:hover{
+    background-image: linear-gradient(to top left, rgb(246, 79, 7), yellow);
+
+}
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to top left, rgb(246, 79, 7), yellow);
+    margin: 30px 20px 30px 0px;
+}
+.icons:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
+.up-arrow:hover i{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+footer p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
